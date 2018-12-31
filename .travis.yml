@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "lts/*"
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  target-branch: build
+  keep-history: true
+  on:
+    branch: master
